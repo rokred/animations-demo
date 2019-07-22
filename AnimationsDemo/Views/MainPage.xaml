@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ui:ReactiveContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:AnimationsDemo.ViewModels;assembly=AnimationsDemo"
+    xmlns:ui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+    x:TypeArguments="vm:MainViewModel"
+    x:Class="AnimationsDemo.Views.MainPage"
+    Padding="20">
+    <StackLayout>
+        <Frame HasShadow="False" CornerRadius="10"
+               BackgroundColor="Aqua">
+            <Button x:Name="EdgarAnimationsButton"
+                    Text="Edgar Animations"
+                    FontSize="20"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" />
+        </Frame>
+
+        <Button x:Name="KrisAnimationsButton"
+                Text="Kris Animations"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+
+        <Button x:Name="RobinAnimationsButton"
+                Text="Robin Animations"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+
+    </StackLayout>
+
+</ui:ReactiveContentPage>
